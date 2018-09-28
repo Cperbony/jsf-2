@@ -28,6 +28,7 @@ public class CustomerBean {
 		try {
 			ctx = new InitialContext();
 			dataSource = (DataSource) ctx.lookup("java:comp/env/jdbc/mysql");
+			this.customer = new Customer();
 		} catch (NamingException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
